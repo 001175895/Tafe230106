@@ -122,8 +122,8 @@
     <Compile Include="Mortgage_Calculator_Page.xaml.cs">
       <DependentUpon>Mortgage_Calculator_Page.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Currency_Calculator_Page.xaml.cs">
-      <DependentUpon>Currency_Calculator_Page.xaml</DependentUpon>
+    <Compile Include="Currency_Conversion_Calculator_Page.xaml.cs">
+      <DependentUpon>Currency_Conversion_Calculator_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
@@ -136,8 +136,8 @@
     <Compile Include="Controls\OperatorButtonControl.xaml.cs">
       <DependentUpon>OperatorButtonControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="Simple_Calculator_Page.xaml.cs">
+      <DependentUpon>Simple_Calculator_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -166,7 +166,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Currency_Calculator_Page.xaml">
+    <Page Include="Currency_Conversion_Calculator_Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -186,7 +186,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="Simple_Calculator_Page.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

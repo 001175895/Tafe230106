@@ -20,9 +20,9 @@ namespace Calculator
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class Currency_Calculator_Page : Page
+	public sealed partial class Currency_Conversion_Calculator_Page : Page
 	{
-		public Currency_Calculator_Page()
+		public Currency_Conversion_Calculator_Page()
 		{
 			this.InitializeComponent();
 		}

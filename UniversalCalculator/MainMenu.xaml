@@ -11,9 +11,10 @@
         <Button Content="Math Calculator" Margin="0,166,0,0" VerticalAlignment="Top" Height="61" Width="176" HorizontalAlignment="Center" Click="mathsCalculatorButton_Click"/>
         <Button Content="Mortgage Calculator" Margin="0,259,0,0" VerticalAlignment="Top" Height="74" Width="176" HorizontalAlignment="Center" Click="mortgageCalculatorButton_Click"/>
         <Button Content="Currency Calculator" Margin="0,360,0,0" VerticalAlignment="Top" Height="67" Width="176" HorizontalAlignment="Center" Click="currencyConverterButton_Click"/>
-        <Button Content="Exit" Margin="0,452,0,0" VerticalAlignment="Top" Height="64" Width="176" HorizontalAlignment="Center" Click="exitButton_Click"/>
+        <Button Content="Exit" Margin="0,546,0,0" VerticalAlignment="Top" Height="64" Width="176" Click="exitButton_Click" HorizontalAlignment="Center"/>
         <TextBlock HorizontalAlignment="Left" Margin="431,50,0,0" TextWrapping="Wrap" Text="Universal Calculator" FontSize="48" VerticalAlignment="Top" Height="78" Width="437" FocusVisualPrimaryBrush="#FFDC5151"/>
         <Image HorizontalAlignment="Left" Height="162" Margin="71,35,0,0" VerticalAlignment="Top" Width="198" Source="Assets/abacus.png	"/>
+        <Button x:Name="trip" Content="Trip Calculator" HorizontalAlignment="Center" Margin="0,457,0,0" VerticalAlignment="Top" Height="67" Width="176" Click="tripCalculatorButton_Click"/>
 
     </Grid>
 </Page>
