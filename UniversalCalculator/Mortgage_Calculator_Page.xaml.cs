@@ -20,33 +20,34 @@ namespace Calculator
 	/// <summary>
 	/// An empty page that can be used on its own or navigated to within a Frame.
 	/// </summary>
-	public sealed partial class MainMenu : Page
+	public sealed partial class Mortgage_Calculator_Page : Page
 	{
-		public MainMenu()
+		public Mortgage_Calculator_Page()
 		{
 			this.InitializeComponent();
 		}
 
-		private void mathsCalculatorButton_Click(object sender, RoutedEventArgs e)
+		private void calculateButton_Click(object sender, RoutedEventArgs e)
 		{
+			double P = double.Parse(principalBorrow.Text);
+			double i;
+			double n;
+			double y = double.Parse(yearlyInterestRate.Text);
+			double t = double.Parse(years.Text);
+			i = (y / 100) / 12;
+			n = t * 12;
+			double M;
 
-			this.Frame.Navigate(typeof(MainPage));
-		}
+			M = (P * i) / (1 - 1 / Math.Pow(1 + i, t * 12));
 
-		private void mortgageCalculatorButton_Click(object sender, RoutedEventArgs e)
-		{
-			this.Frame.Navigate(typeof(Mortgage_Calculator_Page));
-		}
-	
-
-		private void currencyConverterButton_Click(object sender, RoutedEventArgs e)
-		{
-			this.Frame.Navigate(typeof(Currency_Calculator_Page));
+			andMonths.Text = n.ToString();
+			monthlyInterestRate.Text = i.ToString("p");
+			monthlyRepayment.Text = M.ToString("C");
 		}
 
 		private void exitButton_Click(object sender, RoutedEventArgs e)
 		{
-			this.Frame.Navigate(typeof(MainMenu));
+			System.Environment.Exit(0);
 		}
 	}
 }
